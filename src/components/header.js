@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/ianandjesse.svg"
+import uspic from "../images/uspic.jpg"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -15,6 +16,7 @@ const Header = ({ siteTitle }) => (
           <img src={logo} alt="Ian and Jesse" />
         </Link>
       </h1>
+      <img id="uspic" src={uspic} alt="Us smiling." />
   </header>
 )
 
