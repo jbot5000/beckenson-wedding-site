@@ -4,30 +4,17 @@ import React from "react"
 import logo from "../images/ianandjesse.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header>
       <h1 style={{ margin: 0 }}>
-      <img src={logo} alt="Ian and Jesse" />
         <Link
           to="/"
           style={{
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <img src={logo} alt="Ian and Jesse" />
         </Link>
       </h1>
-    </div>
   </header>
 )
 

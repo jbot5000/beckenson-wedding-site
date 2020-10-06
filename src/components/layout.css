@@ -4,6 +4,9 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  background-image: url(./../images/papertexture.jpg);
+  background-repeat: repeat;
+  background-size: 50%;
 }
 body {
   margin: 0;
@@ -590,6 +593,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+header {
+  margin: 0 -1rem 1.45rem -1rem;
+  padding: 1.45rem 0;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
