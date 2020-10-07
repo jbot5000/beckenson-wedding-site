@@ -13,7 +13,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #0c0c29;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -622,7 +622,15 @@ section#links {
   gap: 1em;
 }
 
-section#links div {
+button {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+}
+
+button img {
+  height: 1em;
+  margin: 0 0.25em 0 0;
 }
 
 footer {
