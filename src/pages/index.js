@@ -26,7 +26,7 @@ const IndexPage = () => (
         <p>If you'd like to pitch in, we're accepting donations to help cover the cost of our small wedding.</p>
       </div>
       <div className="link">
-        <a href="tgt.gifts/beckenson">
+        <a href="http://www.target.com/gift-registry/gift/beckenson">
           <button><img src={tgt} alt="Target logo" /><span>Registry</span></button>
         </a>
         <p>We're registered at Target. Please don't feel obligated to get us anything, though!</p>

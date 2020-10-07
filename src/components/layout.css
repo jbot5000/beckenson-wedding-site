@@ -615,6 +615,10 @@ header {
   display: none;
 }
 
+.logo2 {
+  display: block;
+}
+
 header img#uspic {
   position: absolute;
   top: 0;
