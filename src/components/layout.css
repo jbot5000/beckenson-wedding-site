@@ -20,6 +20,7 @@ body {
   font-size: 1.25rem;
   word-wrap: break-word;
   font-kerning: normal;
+  overflow-x: hidden;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -610,6 +611,10 @@ header {
   padding: 1.45rem 0;
 }
 
+.logo1 {
+  display: none;
+}
+
 header img#uspic {
   position: absolute;
   top: 0;
@@ -629,7 +634,8 @@ main {
 section#links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
+  gap: 1.5em;
+  padding-bottom: 2em;
 }
 
 section#links p {
@@ -682,12 +688,14 @@ footer {
   opacity: 0.75;
   position: absolute;
   bottom: 0;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
   header img#uspic {
     width: 100px;
     border: 2px black solid;
+    padding: 0.25em;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -696,5 +704,11 @@ footer {
   }
   section#links {
     grid-template-columns: 1fr;
+  }
+  .logo1 {
+    display: block;
+  }
+  .logo2 {
+    display: none;
   }
 }

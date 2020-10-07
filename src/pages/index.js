@@ -14,13 +14,13 @@ const IndexPage = () => (
     <p>1:00pm Friday, October 16th, 2020, in Des Moines, IA.</p>
     <section id="links">
       <div className="link">
-        <a href="#">
+        <a href="/">
           <button><img src={yt} alt="YouTube logo" />Live Stream</button>
         </a>
-        <p>Stay safe from covid-19 and join us virtually via YouTube Live. Join at 12:45pm to get settle, and at 1pm you'll witness our ceremony!</p>
+        <p>Stay safe from covid-19 and join us virtually via YouTube Live. We'll post the link on October 16th, and you can join at 12:45pm!</p>
       </div>
       <div className="link">
-        <a href="/page-2/">
+        <a href="https://paypal.me/pools/c/8sWeHsq8Lw">
           <button><img src={pp} alt="PayPal logo" />Wedding Fund</button>
         </a>
         <p>If you'd like to pitch in, we're accepting donations to help cover the cost of our small wedding.</p>
