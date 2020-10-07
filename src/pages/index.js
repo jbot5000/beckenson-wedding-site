@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,11 +6,14 @@ import SEO from "../components/seo"
 import yt from "../images/yt.svg"
 import pp from "../images/pp.svg"
 import tgt from "../images/tgt.svg"
+import Countdown from "../components/countdown";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Ian & Jesse's Wedding" />
-    <h2>We're Getting Married!</h2>
+    {
+      Countdown ? <h2>We're getting married! <Countdown></Countdown></h2> : <h2>We're Married!</h2>
+    }
     <p>1:00pm Friday, October 16th, 2020, in Des Moines, IA.</p>
     <section id="links">
       <div className="link">
