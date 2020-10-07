@@ -633,6 +633,27 @@ header img#uspic {
   background-image: url(./../images/papertexture.jpg);
 }
 
+p span.date {
+  margin-right: 0.5em;
+}
+
+span#countdown {
+  background-color: lightblue;
+  font-size: 0.9em;
+  padding: 0.25em;
+  border: 0px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+span#countdown > span {
+  padding: 0 0.25em;
+}
+
+span#countdown span span.timer-number {
+  font-family: 'Abril Fatface', georgia, serif;
+}
+
 main {
   padding-bottom: 3rem;
 }
@@ -730,5 +751,22 @@ footer {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+
+  span#countdown {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    padding: 0.5rem 2rem;
+    width: 100%;
+  }
+
+  main {
+    padding-bottom: 6rem;
+  }
+
+  footer {
+    padding-bottom: 3rem;
   }
 }
