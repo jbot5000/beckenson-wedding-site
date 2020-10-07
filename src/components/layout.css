@@ -613,10 +613,12 @@ header {
 
 .logo1 {
   display: none;
+  min-width: 100%;
 }
 
 .logo2 {
   display: block;
+  min-width: 100%;
 }
 
 header img#uspic {
