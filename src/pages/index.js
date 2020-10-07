@@ -15,19 +15,19 @@ const IndexPage = () => (
     <section id="links">
       <div className="link">
         <a href="/">
-          <button><img src={yt} alt="YouTube logo" />Live Stream</button>
+          <button><img src={yt} alt="YouTube logo" /><span>Live Stream</span></button>
         </a>
         <p>Stay safe from covid-19 and join us virtually via YouTube Live. We'll post the link on October 16th, and you can join at 12:45pm!</p>
       </div>
       <div className="link">
         <a href="https://paypal.me/pools/c/8sWeHsq8Lw">
-          <button><img src={pp} alt="PayPal logo" />Wedding Fund</button>
+          <button><img src={pp} alt="PayPal logo" /><span>Wedding Fund</span></button>
         </a>
         <p>If you'd like to pitch in, we're accepting donations to help cover the cost of our small wedding.</p>
       </div>
       <div className="link">
         <a href="tgt.gifts/beckenson">
-          <button><img src={tgt} alt="Target logo" />Registry</button>
+          <button><img src={tgt} alt="Target logo" /><span>Registry</span></button>
         </a>
         <p>We're registered at Target. Please don't feel obligated to get us anything, though!</p>
       </div>

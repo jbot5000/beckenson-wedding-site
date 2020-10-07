@@ -652,8 +652,9 @@ section#links p:first-of-type::first-letter {
 }
 
 button {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   place-items: center;
   padding: 0.5em 1em;
   margin-bottom: 1em;
@@ -666,9 +667,15 @@ button {
   border-radius: 3px;
 }
 
+button * {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 button img {
   height: 1em;
   margin: 0 0.25em 0 0;
+  display: inline-block;
 }
 
 .link a,
@@ -691,24 +698,31 @@ footer {
   font-size: 1rem;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+  button span {
+    font-size: 1.1rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header img#uspic {
     width: 100px;
     border: 2px black solid;
     padding: 0.25em;
   }
-}
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
   section#links {
     grid-template-columns: 1fr;
+    padding-top: 2em;
   }
   .logo1 {
     display: block;
   }
   .logo2 {
     display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
   }
 }
