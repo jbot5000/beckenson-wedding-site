@@ -29,15 +29,11 @@ const Layout = ({ children }) => {
     <>
     <Helmet>
       <link rel="icon" href={favicon} />
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@0;1&display=swap" rel="stylesheet" />
     </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div id="container">
         <main>{children}</main>
         <footer>
         © {new Date().getFullYear()} | Built by Jesse with
