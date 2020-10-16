@@ -21,17 +21,17 @@ const IndexPage = () => (
       {
         Countdown ?
         <div className="link">
-          <a href="/">
+          <a href="https://youtu.be/w-uG2LjaPjU">
             <button><img src={yt} alt="YouTube logo" /><span>Live Stream</span></button>
           </a>
           <p>Stay safe from covid-19 and join us virtually via YouTube Live! Join at 12:45pm to see the ceremony at 1pm, or check back later for a recording.</p>
         </div>
         :
         <div className="link">
-          <a href="/">
+          <a href="https://youtu.be/w-uG2LjaPjU">
             <button><img src={yt} alt="YouTube logo" /><span>Recording</span></button>
           </a>
-          <p>We'll post a video of our ceremony as soon as we can! <span role="img" aria-label="tada">🎉</span></p>
+          <p>Here's the recording of our ceremony! We did it! <span role="img" aria-label="tada">🎉</span></p>
         </div>
       }
       <div className="link">
